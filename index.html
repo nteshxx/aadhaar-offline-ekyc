@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    input[type=file], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      width: 30%;
+      margin: 0 auto;
+    }
+
+    #outer {
+      width:100%;
+      justify-content: center;
+    }
+    </style>
+<head>
+  <meta charset="UTF-8">
+  <title>Paperless Offline e-KYC</title>
+</head>
+<body>
+  <h3>Paperless eKYC</h3>
+
+  <div id="outer">
+  <div>
+ 
+ <!--  SINGLE FILE -->
+<form action="/uploadfile" enctype="multipart/form-data" method="POST"> 
+   <input type="file" name="aadhaarXML" />
+   <input type="text" name="sharecode" placeholder="Share Code" />
+   <input type="submit" value="Upload"/>
+</form>
+</div>
+<p> Don't have an AadhaarXML file, download from <a href="https://resident.uidai.gov.in/offline-kyc" target="_blank">here</a></p>
+</div>
+
+</body>
+</html>
