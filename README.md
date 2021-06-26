@@ -6,8 +6,8 @@ Aadhaar Paperless Offline e-KYC eliminates the need for the resident to provide 
 Aadhaar Paperless Offline e-KYC data may be provided to the verifying agency by the Aadhaar number holder in digital or physical format along with share phrase
 
 ## XML Validation steps :
-* 1. Aadhaar Paperless Offline e-KYC XML is zipped and protected with the “Share Phrase”. It can be unzipped using any standard unzipping utility (like WinZip, WinRaR, 7Zip etc.). While unzipping, a prompt will show for password where “Share Phrase” should be entered.
+ 1. Aadhaar Paperless Offline e-KYC XML is zipped and protected with the “Share Phrase”. It can be unzipped using any standard unzipping utility (like WinZip, WinRaR, 7Zip etc.). While unzipping, a prompt will show for password where “Share Phrase” should be entered.
 
-* 2. Parse the XML and use the logic mentioned earlier to validate the digital signature.
+ 2. Parse the XML and use the logic mentioned earlier to validate the digital signature.
 
-* 3. Optionally do OTP validation against the mobile number (resident needs to provide mobile number which can be hashed and verified against the KYC data) and/or do face validation by capturing face and matching against the photo within the e-KYC XML.
+ 3. Optionally do OTP validation against the mobile number (resident needs to provide mobile number which can be hashed and verified against the KYC data) and/or do face validation by capturing face and matching against the photo within the e-KYC XML.
