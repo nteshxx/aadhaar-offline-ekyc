@@ -1,6 +1,5 @@
 const express = require('express')
 const bodyParser= require('body-parser')
-const PORT = 5000
 
 //CREATE EXPRESS APP
 const app = express();
@@ -22,4 +21,4 @@ app.get('/getip', (req, res) => {
 
 app.use(require('./routes/verify'))
  
-app.listen(PORT, () => console.log('Server started on port ', PORT));
+app.listen(process.env.PORT, () => console.log('Server started on port ', PORT));
